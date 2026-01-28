@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exchange rate by Prog.kiev.ua</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/geo.css">
+</head>
+<body>
+<main role="main" class="container">
+
+
+    <div class="form-inline mb-3">
+        <input id="searchCity" type="text" class="form-control mr-2" placeholder="Enter city...">
+        <button id="searchBtn" class="btn btn-primary">Search</button>
+    </div>
+
+    <table id="data" class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">IP</th>
+            <th scope="col">City</th>
+            <th scope="col">Region</th>
+            <th scope="col">Country</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <nav aria-label="Page navigation">
+        <ul id="pages" class="pagination"></ul>
+    </nav>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="/js/admin.js"></script>
+
+</body>
+</html>
