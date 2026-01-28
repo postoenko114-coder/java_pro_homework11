@@ -25,8 +25,6 @@ public class SpringGeoApplication {
 
             locationService.save(dto);locationService.save(dto1);
 
-
-
         };
     }
 }

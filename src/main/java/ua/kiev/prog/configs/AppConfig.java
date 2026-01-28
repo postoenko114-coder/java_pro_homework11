@@ -6,5 +6,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
-
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/admin")
+                .setViewName("redirect:/admin.html");
+    }
 }
